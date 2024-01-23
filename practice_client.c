@@ -23,7 +23,7 @@ servaddr.sin_family= AF_INET;
 servaddr.sin_addr.s_addr= htonl(INADDR_ANY);
 servaddr.sin_port= htons(cport);
 
-if(connect( cd, (struct sockaddr*)&servaddr, sizeof(servaddr) ) <0){
+if(connect( cd, (struct sockaddr*)&servaddr, sizeof(servaddr) ) <0){//similar to bind
 printf("Cant connect");
 }
 else{
